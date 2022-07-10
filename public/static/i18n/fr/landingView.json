@@ -1,0 +1,7 @@
+{
+  "userNotFound": "The user wasn't found",
+  "test": "password you provided was incorrect",
+  "errorFetchGetData": "An error occurred while loading restaurants",
+
+  "InternalServerError": "Internal Server Error "
+}
