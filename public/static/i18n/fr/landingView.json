@@ -1,7 +1,13 @@
 {
-  "userNotFound": "The user wasn't found",
-  "test": "password you provided was incorrect",
-  "errorFetchGetData": "An error occurred while loading restaurants",
+  "home": "Accueil",
+  "profile": "Profil",
+  "education": "Education",
+  "experiences": "Experiences",
+  "skills": "Compétences",
+  "projects": "Projets",
+  "contact": "Contact",
 
-  "InternalServerError": "Internal Server Error "
+  "logo_LVP": "Logo Lucas VP",
+  "switchLanguage": "Changer la langue",
+  "switchThemeMode": "Changer le theme"
 }

@@ -1,31 +1,23 @@
-import React from 'react';
-import logo from '../logo.svg';
-import '../App.css';
-import { useTranslation } from 'react-i18next';
-
+import { Box, Button } from "@mui/material";
+import React from "react";
+import { useTranslation } from "react-i18next";
+import Text from "../components/Text";
+import TopBar from "./components/TopBar";
 
 const IndexView = () => {
-  const { t } = useTranslation('landingView');
+  const { t } = useTranslation("landingView");
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>{t('test')}</p>
-      </header>
-    </div>
+    <>
+      <Box sx={{ bgcolor: 'primary.main' }}><TopBar /></Box>
+
+      <Text h1 sx={{ color: 'primary.main' }}>
+        {t("test")}
+      </Text>
+      <Button variant="text" sx={{ color: 'primary.light' }}>Bonjout</Button>
+      <Text h6>Bonjour, Je m'appelle Lucas Virieux-Petit</Text>
+    </>
   );
-}
+};
 
 export default IndexView;

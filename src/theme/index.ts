@@ -17,7 +17,7 @@ const getTheme = (mode: 'light' | 'dark', themeToggler: () => void) => responsiv
   createTheme({
     palette: mode === 'light' ? light : dark,
     typography: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Poppins", sans-serif',
       button: {
         textTransform: 'none',
         fontWeight: 'medium',
@@ -28,8 +28,8 @@ const getTheme = (mode: 'light' | 'dark', themeToggler: () => void) => responsiv
       h3: {
         fontFamily: '"Josefin sans", sans-serif',
       },
-      h4: {
-        fontFamily: '"Josefin sans", sans-serif',
+      h6: {
+        fontSize: '12px',
       },
     },
     zIndex: {
