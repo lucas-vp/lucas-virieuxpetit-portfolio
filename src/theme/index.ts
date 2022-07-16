@@ -1,8 +1,15 @@
-import { responsiveFontSizes } from '@mui/material';
-import { createTheme } from '@mui/material/styles';
-import { light, dark } from './palette';
+import { responsiveFontSizes } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { light, dark } from "./palette";
 
-declare module '@mui/material/styles' {
+type AlternatePalette = {
+  landingGradient: string;
+  splitColorPaperYellowWhite: string;
+  splitColorPaperWhiteYellow: string;
+
+};
+
+declare module "@mui/material/styles" {
   // allow configuration using `createTheme`
   interface ThemeOptions {
     themeToggler: () => void;
@@ -11,34 +18,51 @@ declare module '@mui/material/styles' {
     themeToggler: () => void;
   }
 
+  interface PaletteOptions {
+    alternate: AlternatePalette;
+  }
+  interface Palette {
+    alternate: AlternatePalette;
+  }
 }
 
-const getTheme = (mode: 'light' | 'dark', themeToggler: () => void) => responsiveFontSizes(
-  createTheme({
-    palette: mode === 'light' ? light : dark,
-    typography: {
-      fontFamily: '"Poppins", sans-serif',
-      button: {
-        textTransform: 'none',
-        fontWeight: 'medium',
+const getTheme = (mode: "light" | "dark", themeToggler: () => void) =>
+  responsiveFontSizes(
+    createTheme({
+      palette: mode === "light" ? light : dark,
+      typography: {
+        fontFamily: '"Poppins", sans-serif',
+        button: {
+          textTransform: "none",
+          fontWeight: "medium",
+        },
+        h1: {
+          fontSize: "25px",
+          fontWeight: "500"
+        },
+        h2: {
+          fontSize: "25px",
+        },
+        h3: {
+          fontSize: "20px",
+        },
+        h4: {
+          fontSize: "18px",
+        },
+        h5: {
+          fontSize: "15px",
+        },
+        h6: {
+          fontSize: "10px",
+        },
       },
-      h2: {
-        fontFamily: '"Josefin sans", sans-serif',
+      zIndex: {
+        appBar: 1200,
+        drawer: 1300,
       },
-      h3: {
-        fontFamily: '"Josefin sans", sans-serif',
-      },
-      h6: {
-        fontSize: '12px',
-      },
-    },
-    zIndex: {
-      appBar: 1200,
-      drawer: 1300,
-    },
-    themeToggler,
-  }),
-);
+      themeToggler,
+    })
+  );
 
 export default getTheme;
 

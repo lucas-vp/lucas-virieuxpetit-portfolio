@@ -9,5 +9,16 @@
 
   "logo_LVP": "Lucas's Logo",
   "switchLanguage": "Switch Language",
-  "switchThemeMode": "Switch theme mode"
+  "switchThemeMode": "Switch theme mode",
+
+  "welcomeOnMyPortfolio": "Welcome on my Portfolio,",
+  "its": "I am",
+  "name": "Lucas Virieux-Petit",
+  "and": "and",
+  "iam": "I am",
+  "jobTitle": "Junior Full Stack Developer",
+
+  "age" : "24 yo",
+  "city" : "La Rochelle",
+  "currentSituation": "Job seeking"
 }

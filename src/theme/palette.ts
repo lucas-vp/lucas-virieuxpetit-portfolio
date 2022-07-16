@@ -1,6 +1,13 @@
 import { PaletteOptions } from '@mui/material';
 
 export const light: PaletteOptions = {
+  alternate: {
+    landingGradient:'linear-gradient(180deg, #F4A261 0%, #E9C46A 99.99%)',
+    splitColorPaperWhiteYellow:'linear-gradient(180deg, #fff 50%, #F4A261 50%)',
+    splitColorPaperYellowWhite:'linear-gradient(180deg, #E9C46A 50%, #fff 50%)'
+
+
+  },
   mode: 'light',
   primary: {
     main: '#F4A261',
@@ -19,6 +26,11 @@ export const light: PaletteOptions = {
 };
 
 export const dark: PaletteOptions = {
+  alternate: {
+    landingGradient:'linear-gradient(180deg, #A40606 0%, #D98324 99.99%)',
+    splitColorPaperWhiteYellow:'linear-gradient(180deg, #fff 50%, #F4A261 50%)',
+    splitColorPaperYellowWhite:'linear-gradient(180deg, #E9C46A 50%, #fff 50%)'
+  },
   common: {
     black: '#000',
     white: '#fff',

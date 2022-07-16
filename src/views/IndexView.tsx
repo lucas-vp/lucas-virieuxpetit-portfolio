@@ -1,21 +1,30 @@
-import { Box, Button } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import React from "react";
-import { useTranslation } from "react-i18next";
-import Text from "../components/Text";
-import TopBar from "./components/TopBar";
+import Contact from "./components/contact/Contact";
+import Education from "./components/education/Education";
+import Experience from "./components/experience/Experience";
+import Footer from "./components/Footer";
+import Landing from "./components/landing/Landing";
+import Presentation from "./components/presentention/Presentation";
+import Projects from "./components/projects/Projects";
+import Skill from "./components/skill/Skill";
 
 const IndexView = () => {
-  const { t } = useTranslation("landingView");
+  const theme = useTheme();
 
   return (
     <>
-      <Box sx={{ bgcolor: 'primary.main' }}><TopBar /></Box>
-
-      <Text h1 sx={{ color: 'primary.main' }}>
-        {t("test")}
-      </Text>
-      <Button variant="text" sx={{ color: 'primary.light' }}>Bonjout</Button>
-      <Text h6>Bonjour, Je m'appelle Lucas Virieux-Petit</Text>
+      <Box bgcolor="common.white" height={1}>
+        <Landing />
+      </Box>
+      <Presentation />
+      <Education />
+      <Experience />
+      <Skill />
+      <Projects />
+      <Box sx={{ background: theme.palette.alternate.landingGradient }} height="25px" />
+      <Contact />
+      <Footer />
     </>
   );
 };
