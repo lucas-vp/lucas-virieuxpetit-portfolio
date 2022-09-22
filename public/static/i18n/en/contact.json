@@ -1,0 +1,17 @@
+{
+  "contact": "Contact",
+  "enterName": "Please enter your name",
+  "enterSubject": "Please enter the subject of the message",
+  "enterMail": "Please enter your email",
+  "validMail": "Please enter a valid email",
+  "enterMessage": "Please specify your message",
+  "leaveMessage": "Do not hesitate to leave me a message...",
+  "name": "Name",
+  "email": "Email",
+  "subject": "Message subject",
+  "message": "Message",
+  "phoneNumber": "Phone number (optional) ",
+  "send": "Send",
+  "errorMessage": "Internal error. Please try again or contact me directly via my phone number.",
+  "successMessage": "Message sent. I will answer you quickly."
+}

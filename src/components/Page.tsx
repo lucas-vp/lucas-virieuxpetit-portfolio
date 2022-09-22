@@ -3,6 +3,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { PaletteMode, PaperProps } from '@mui/material';
 import getTheme from '../theme';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export const useDarkMode = (): [PaletteMode, () => void, boolean] => {
   const [themeMode, setTheme] = useState<PaletteMode>('light');
@@ -27,6 +30,15 @@ export const useDarkMode = (): [PaletteMode, () => void, boolean] => {
   }, [themeMode]);
 
   useEffect(() => {
+    window.scrollTo({top: 0, left: 0 });
+    AOS.init({
+      once: true,
+      delay: 0,
+      duration: 800,
+      offset: 100,
+      easing: 'ease-in-out',
+    });
+    AOS.refresh();
     try {
       const localTheme = window.localStorage.getItem('themeMode');
       if (localTheme) {

@@ -21,27 +21,30 @@ const LanguageToggler = () => {
         onClick={toogleLanguage}
         variant="outlined"
         sx={{
+          boxShadow: 2,
           alignSelf: "center",
           color: "text.secondary",
           borderRadius: 2,
           minWidth: "auto",
           padding: 0.5,
           borderColor: "text.secondary",
+          borderWidth: 1.5
         }}
       >
         {i18n.language === "fr" ? (
           <Box
-            alt="Logo Sostag"
+            alt="UK flaf"
             component="img"
-            src="/static/icon/englishLanguage.png"
+            src="/static/icon/UKFlag.png"
             width={24}
+            height={1}
           />
         ) : (
           i18n.language === "en" && (
             <Box
-              alt="Logo ostag"
+              alt="france flag"
               component="img"
-              src="/static/icon/frenchLanguage.png"
+              src="/static/icon/franceFlag.png"
               width={24}
             />
           )

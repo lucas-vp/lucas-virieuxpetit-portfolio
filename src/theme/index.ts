@@ -1,6 +1,7 @@
 import { responsiveFontSizes } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { light, dark } from "./palette";
+import { typography } from "./typography";
 
 type AlternatePalette = {
   landingGradient: string;
@@ -30,37 +31,22 @@ const getTheme = (mode: "light" | "dark", themeToggler: () => void) =>
   responsiveFontSizes(
     createTheme({
       palette: mode === "light" ? light : dark,
-      typography: {
-        fontFamily: '"Poppins", sans-serif',
-        button: {
-          textTransform: "none",
-          fontWeight: "medium",
-        },
-        h1: {
-          fontSize: "25px",
-          fontWeight: "500"
-        },
-        h2: {
-          fontSize: "25px",
-        },
-        h3: {
-          fontSize: "20px",
-        },
-        h4: {
-          fontSize: "18px",
-        },
-        h5: {
-          fontSize: "15px",
-        },
-        h6: {
-          fontSize: "10px",
-        },
-      },
+      typography,
       zIndex: {
         appBar: 1200,
         drawer: 1300,
       },
       themeToggler,
+      components: {
+        MuiFormLabel:{
+          styleOverrides:{
+            root: {
+              color: 'black',
+              fontWeight: '600'
+            }
+          },
+        },
+      }
     })
   );
 

@@ -2,11 +2,9 @@ import { PaletteOptions } from '@mui/material';
 
 export const light: PaletteOptions = {
   alternate: {
-    landingGradient:'linear-gradient(180deg, #F4A261 0%, #E9C46A 99.99%)',
+    landingGradient:'linear-gradient(180deg, #F4A261 25%, #E9C46A 99.99%)',
     splitColorPaperWhiteYellow:'linear-gradient(180deg, #fff 50%, #F4A261 50%)',
     splitColorPaperYellowWhite:'linear-gradient(180deg, #E9C46A 50%, #fff 50%)'
-
-
   },
   mode: 'light',
   primary: {
@@ -20,14 +18,14 @@ export const light: PaletteOptions = {
   },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
-    paper: '#f9f9f9',
-    default: '#f9f9f9',
+    paper: '#fff',
+    default: '#fff',
   },
 };
 
 export const dark: PaletteOptions = {
   alternate: {
-    landingGradient:'linear-gradient(180deg, #A40606 0%, #D98324 99.99%)',
+    landingGradient:'linear-gradient(180deg, #F4A261 0%, #E9C46A 99.99%)',
     splitColorPaperWhiteYellow:'linear-gradient(180deg, #fff 50%, #F4A261 50%)',
     splitColorPaperYellowWhite:'linear-gradient(180deg, #E9C46A 50%, #fff 50%)'
   },
@@ -37,9 +35,9 @@ export const dark: PaletteOptions = {
   },
   mode: 'dark',
   primary: {
-    main: '#3bafda',
-    light: '#5fc8ee',
-    dark: '#2e93b8',
+    main: '#F4A261',
+    light: '#E9C46A',
+    dark: '#E76F51',
     contrastText: '#fff',
   },
   secondary: {

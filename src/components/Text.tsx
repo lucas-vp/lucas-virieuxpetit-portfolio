@@ -17,10 +17,17 @@ interface Props extends TypographyProps {
   button?: boolean;
   overline?: boolean;
   inherit?: boolean;
+  bold?: number;
+  italic?: boolean;
+  underline?: boolean;
+  sx?: any;
 }
 
 const Text = ({
   children,
+  bold = 600,
+  italic = false,
+  underline = false,
   h1 = false,
   h2 = false,
   h3 = false,
@@ -35,6 +42,7 @@ const Text = ({
   button = false,
   overline = false,
   inherit = false,
+  sx,
   ...rest
 }: Props) => (
   <Typography
@@ -54,7 +62,8 @@ const Text = ({
                               : overline ? 'overline'
                                 : inherit ? 'inherit'
                                   : 'body1'
-      }
+    }
+    sx={{ ...sx, fontWeight: bold, fontStyle: italic ? 'italic' : 'none', textDecoration: underline ? 'underline' : 'none' }}
     {...rest}
   >
     {children}

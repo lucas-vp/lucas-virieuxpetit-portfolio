@@ -12,33 +12,40 @@ const AgeCitySituation = () => {
   return (
     <Paper elevation={1} sx={{ background: "rgba(255, 255, 255, 0.6)" }}>
       <Stack
-        sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" } }}
+        sx={{ display: "flex", flexDirection: "row" }}
         justifyContent="space-evenly"
         textAlign="center"
-      >
-        <Box display="flex" flexBasis="50%" sx={{ justifyContent: { xs: 'space-evenly' , sm: 'space-around'} }}>
-          <Box display="flex" alignItems="center">
-            <ManIcon sx={{ mr: 1 }} />
-            <Text h5 sx={{ py: 1 }}>
-              {t("age")}
-            </Text>
-          </Box>
-          <Divider flexItem sx={{ borderRightWidth: 2 }} />
-          <Box display="flex" alignItems="center">
-            <LocationCityIcon sx={{ mr: 1 }} />
-            <Text h5 sx={{ py: 1 }}>
-              {t("city")}
-            </Text>
-          </Box>
+      >          <Box display="flex" alignItems="center" alignSelf="center">
+          <ManIcon sx={{ mr: 1 }} />
+          <Text body2 sx={{ py: { xs: 0.5, md: 1} }}>
+            {t("age")}
+          </Text>
         </Box>
         <Divider flexItem sx={{ borderRightWidth: 2 }} />
         <Box display="flex" alignItems="center" alignSelf="center">
+          <LocationCityIcon sx={{ mr: 1 }} />
+          <Text body2  sx={{ py: { xs: 0.5, md: 1} }}>
+            {t("city")}
+          </Text>
+        </Box>
+        <Divider flexItem sx={{ borderRightWidth: 2, display: { xs: 'none', md: 'block' } }} />
+        <Box display={{ xs: 'none', md: 'flex' }} alignItems="center" alignSelf="center">
           <WarningIcon sx={{ mr: 1 }} />
-          <Text h5 sx={{ py: 1 }}>
+          <Text body2  sx={{ py: { xs: 0.5, md: 1} }}>
             {t("currentSituation")}
           </Text>
         </Box>
+
       </Stack>
+      <Box display={{ xs: 'block', md: 'none' }}>
+        <Divider flexItem sx={{ borderRightWidth: 2 }} />
+        <Box display="flex" alignItems="center" justifyContent="center">
+          <WarningIcon sx={{ mr: 1 }} />
+          <Text body2  sx={{ py: { xs: 0.5, md: 1} }}>
+            {t("currentSituation")}
+          </Text>
+        </Box>
+      </Box>
     </Paper>
   );
 };

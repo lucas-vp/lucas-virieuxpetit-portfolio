@@ -1,0 +1,17 @@
+{
+  "contact": "Contact",
+  "enterName": "Veuillez saisir votre nom",
+  "enterSubject": "Veuillez saisir l'objet du message",
+  "enterMail": "Veuillez saisir votre email",
+  "validMail": "Veuillez saisir un email valide",
+  "enterMessage": "Veuillez préciser votre message",
+  "leaveMessage": "N'hésitez pas à me laisser un message...",
+  "name": "Nom",
+  "subject": "Objet du message",
+  "email": "E-mail",
+  "message": "Message",
+  "phoneNumber": "Téléphone (facultatif)",
+  "send": "Envoyer",
+  "errorMessage": "Erreur interne. Veuillez réessayer ou me contacter directement via mon numéro de téléphone.",
+  "successMessage": "Message envoyé. Je vous répondrai au plus vite."
+}

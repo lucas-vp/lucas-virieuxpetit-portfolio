@@ -1,0 +1,43 @@
+{
+  "projects": "Few projects",
+  "proProject" : "#profesionnal_Project",
+  "persoProject" : "personal_Project",
+  "url": "Website URL :",
+  "alt_project_portfolio" : "Screenshot portfolio website",
+  "alt_project_restaurant" : "Screenshot restaurant website",
+  "alt_project_flutter" : "Screenshot renovation Application",
+  "alt_project_fanny" : "Screenshot psychologue website",
+
+  "title1": "Website for psychologist",
+  "description1": "Website created to promote the services of a clinical psychologist in private practice. Website project carried out from the creation of the website design to the deployment on the internet.",
+  "task1_1": "Design of interactive prototype on Figma",
+  "task1_2": "Development of the website and its mobile responsive design",
+  "task1_3": "Use of MUI, library of user interface components",
+  "task1_4": "Implementation of emailJS library for sending email",
+  "task1_5": "SEO management",
+  "task1_6": "Website deployment on hosting server (OVH)",
+
+  "title2": "Implementation of an online food platform in React JS",
+  "description2": "Development of a front-end online food platform. Project carried out during my internship for the last year of my professional bachelor's degree in La Rochelle (France).",
+  "task2_1": "Development of the website and its mobile responsive design",
+  "task2_2": "Development by accessing data via a REST services architecture.",
+  "task2_3": "Maintenance, improvement and Implementation of new features on the site.",
+  "task2_4": "Use of MUI, library of user interface components",
+
+  "title3": "Personal portfolio",
+  "description3": "Development of my portfolio that will follow me throughout my working life. Coded in React JS - typescript with the MUI component library. Future improvement: Added a back office with an admin interface to add or remove features on my portfolio",
+  "task3_1": "Design of interactive prototype on Figma",
+  "task3_2": "Development of the website and its mobile responsive design",
+  "task3_3": "Configuration of the site in multilingual (French - English)",
+  "task3_4": "Use of MUI, library of user interface components",
+  "task3_5": "Implementation of emailJS library for sending email",
+  "task3_6": "SEO management",
+  "task3_7": "Website deployment on hosting server (OVH)",
+
+  "title4": "  Mobile app - Management of renovation works",
+  "description4": "Mobile application to help the citizens of a French city to manage their renovation works. Developed in Flutter (Final Degree Project)",
+  "task4_1": "Design of interactive prototype on Figma",
+  "task4_3": "Developement of a prototype version of the website in Flutter",
+  "task4_2": "Implementation of agile project management (Scrum)"
+
+}

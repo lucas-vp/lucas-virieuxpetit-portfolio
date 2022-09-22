@@ -1,0 +1,47 @@
+{
+  "projects": "Quelques projets",
+  "proProject" : "#ProjetPro",
+  "persoProject" : "#ProjetPerso",
+  "description": "Description :",
+  "tasks": "Les missions :",
+  "technologiesUsed": "Technologies utilisées :",
+  "url": "URL du site :",
+  
+  "alt_project_portfolio" : "Capture d'écran site portfolio",
+  "alt_project_restaurant" : "Capture d'écran site restaurant",
+  "alt_project_flutter" : "Capture d'écran application rénovation",
+  "alt_project_fanny" : "Capture d'écran site psychologue",
+
+  "title1": "Site vitrine pour psychologue",
+  "description1": "Site internet crée pour promouvoir les services d'une psychologue clinicienne en libéral. Projet réalisé dans son entiereté, de la réalisation de la maquette jusqu'au déploiement du site.",
+  "task1_1": "Conception de maquettes interactives web UX sur Figma",
+  "task1_2": "Développement du site et de sa version responsive mobile",
+  "task1_3": "Utilisation de MUI, librairie de composants d'interface utilisateur",
+  "task1_4": "Mise en place de la librairie emailJS pour l'envoi d'email",
+  "task1_5": "Gestion du SEO",
+  "task1_6": "Déploiement site internet sur hebergeur (OVH)",
+
+  "title2": "Interface de réservation de repas en ReactJS",
+  "description2": "Développement d'une interface de réservation de repas coté front. Projet effectué lors de mon stage de dernière année de licence professionnelle à La Rochelle.",
+  "task2_1": "Développement du site et de sa version responsive mobile",
+  "task2_2": "Développement en accédant aux données via une architecture de services REST.",
+  "task2_3": "Maintenance, amélioration et ajout de nouveaux modules sur le site.",
+  "task2_4": "Utilisation de MUI, librairie de composants d'interface utilisateur",
+
+  "title3": "Portfolio personnel",
+  "description3": "Développement de mon portfolio qui me suivra tout au long de ma vie active. Réalisé en React JS - typescript avec la librairie de composants MUI. Amélioration future: Ajout d'un back office avec une interface administrateur pour ajouter ou supprimer des élements du portfolio",
+  "task3_1": "Conception de maquettes interactives web UX sur Figma",
+  "task3_2": "Développement du site et de sa version responsive mobile",
+  "task3_3": "Configuration du site en multilangue ( Francais - Anglais )",
+  "task3_4": "Utilisation de MUI, librairie de composants d'interface utilisateur",
+  "task3_5": "Mise en place de la librairie emailJS pour l'envoi d'email",
+  "task3_6": "Gestion du SEO",
+  "task3_7": "Déploiement site internet sur hebergeur (OVH)",
+
+  "title4": "App mobile - Gestion de travaux de rénovation",
+  "description4": "Application mobile d'aide à la gestion de travaux de rénovation en lien avec les aides de l'état. Développé en Flutter (Projet de groupe de fin d'année)",
+  "task4_1": "Conception de maquettes interactives web UX sur Figma",
+  "task4_2": "Développement d'une première version fonctionelle en Flutter",
+  "task4_3": "Mise en place d'une gestion de projet agile (Scrum)"
+
+}
