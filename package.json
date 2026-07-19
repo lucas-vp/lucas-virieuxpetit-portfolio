@@ -2,7 +2,7 @@
   "name": "lucas-virieuxpetit-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lucas-vp.github.io/lucas-virieuxpetit-portfolio/",
+  "homepage": "https://lucas-vp.github.io/lucas-virieuxpetit-portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.9.3",
